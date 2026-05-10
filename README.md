@@ -9,7 +9,6 @@ johnny74/
 ├── index.html        Main profile — hero, slash line, full stat table, photos
 ├── story.html        Long-form season narrative with pullquotes
 ├── recruiting.html   Recruiting kit — verified stats, profile, references, contact
-├── 404.html          On-brand error page
 ├── styles.css        Shared stylesheet — edit once, updates everywhere
 └── README.md         This file
 ```
