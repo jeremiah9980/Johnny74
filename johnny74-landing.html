@@ -137,10 +137,10 @@
       display: block;
       max-height: 88vh;
       object-fit: cover;
-      object-position: center 15%;
+      object-position: center 40%;
     }
     @media (max-width: 700px) {
-      .hero-photo-bg { max-height: 75vw; min-height: 300px; object-position: center 10%; }
+      .hero-photo-bg { max-height: 100vw; min-height: 380px; object-position: center 35%; }
     }
     .hero-overlay {
       position: absolute;
@@ -155,7 +155,7 @@
     }
     @media (max-width: 700px) {
       .hero-overlay {
-        background: linear-gradient(to bottom, transparent 50%, var(--navy) 100%);
+        background: linear-gradient(to bottom, rgba(8,26,46,0.15) 0%, rgba(8,26,46,0.35) 40%, rgba(8,26,46,0.82) 72%, var(--navy) 100%);
       }
     }
     .hero-inner {
@@ -175,6 +175,7 @@
     }
     @media (max-width: 700px) {
       .hero-content { grid-template-columns: 1fr; gap: 0.75rem; padding-bottom: 1.75rem; }
+      .hero-content > div:last-child { display: none; }
     }
 
     /* ── CAREER STAT STRIP ── */
@@ -660,6 +661,16 @@
 
 
     /* == iOS MOBILE OVERRIDES == */
+    @media (max-width: 700px) {
+      .hero-badge-pill {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.6rem;
+        padding: 3px 8px;
+      }
+      .hero-name { font-size: clamp(2.8rem, 10vw, 4rem); }
+      .hero-tagline { font-size: 0.88rem; line-height: 1.55; }
+    }
     @media (max-width: 480px) {
 
       /* Reduce section padding */
